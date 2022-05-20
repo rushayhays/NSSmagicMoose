@@ -76,9 +76,12 @@ void AskQuestions()
     do{
         MooseSays("Ask me a question and recieve my Wisdom or leave my presence by typing 'exit'");
         response = Hear();
+        Console.WriteLine("Push enter to proceed");
+        string ReadyToProceedFeedBack = Console.ReadLine();
     }
     while(response != "exit");
 }
+
 
 
 
